@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=git, initial-scale=1.0">
+        <script>
+            function getImageUrl() {
+                var url = document.getElementById('url_input').value           
+                var img = document.getElementById('img').src = url
+            }
+        </script>
+        <style>
+            div {
+                display: block;
+                margin-bottom: 12px
+            }
+            input {
+                width: 300px;
+                height: 40px;
+                box-sizing: border-box;
+            }
+            button {
+                height: 40px;
+            }
+            img {
+                max-width: 500px;
+            }
+        </style>
+    <head>
+    <body>
+        <h1>Mostrar Imagem</h1>
+        <div>
+            <input id="url_input" type="text" placeholder="Insert Image URL:">
+            <button onclick="getImageUrl()">Mostrar Imagem</button>
+        </div>
+        <img id="img" src="">
+
+    </body>
+</html>
